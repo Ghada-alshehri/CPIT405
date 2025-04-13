@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NBA Stats Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>NBA Player Stats Dashboard</h1>
+
+        <div class="table-filters">
+            <div class="filters-left">
+                <input type="text" id="search" placeholder="Search players..." />
+                <select id="team-filter">
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <button id="dark-mode-toggle">Dark Mode</button>
+        </div>
+        
+        <table id="player-stats">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Team</th>
+                    <th>Points</th>
+                    <th>Rebounds</th>
+                    <th>Assists</th>
+                </tr>
+            </thead>
+            <tbody id="player-rows">
+                <!-- Rows will be added here by JS -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
